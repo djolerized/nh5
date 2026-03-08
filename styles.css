@@ -323,6 +323,7 @@ header .container {
     width: 100%;
     height: 100%;
     background-color: var(--primary-color);
+    opacity: 0.3;
     mix-blend-mode: multiply;
     pointer-events: none;
 }
