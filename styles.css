@@ -5,13 +5,13 @@
 }
 
 :root {
-    --primary-color: #1a1a1a;
-    --secondary-color: #4a4a4a;
+    --primary-color: #121737;
+    --secondary-color: #DBBA82;
     --accent-color: #2c5f8d;
     --background-light: #ffffff;
     --background-gray: #f8f9fa;
     --border-color: #e1e4e8;
-    --text-primary: #1a1a1a;
+    --text-primary: #121737;
     --text-secondary: #6c757d;
     --success-color: #28a745;
     --spacing-unit: 8px;
@@ -60,9 +60,15 @@ header .container {
 .social-icons a {
     color: var(--text-secondary);
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
     transition: color 0.3s ease;
+}
+
+.social-icons a svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
 
 .social-icons a:hover {
