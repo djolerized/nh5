@@ -25,7 +25,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 $to = 'prodaja@8rooms.rs';
-$subject = 'Nova kontakt forma - NH5';
+$subject = 'Nikolaja Hartviga 5';
 
 $email_body = "Nova poruka sa sajta NH5\n\n";
 $email_body .= "Ime i prezime: " . htmlspecialchars($name) . "\n";

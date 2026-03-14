@@ -34,6 +34,13 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 24px;
 }
 
+.stanovi.container {
+        display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
 header {
     background-color: var(--background-light);
     padding: 24px 0;
@@ -50,7 +57,7 @@ header .container {
 }
 
 .logo-img {
-    height: 48px;
+    height: 96px;
     width: auto;
     display: block;
 }
@@ -848,6 +855,10 @@ footer {
     .btn {
         width: 100%;
         text-align: center;
+    }
+    
+    .apartment-image img {
+        height: auto;
     }
 
     .contact-form-wrapper {

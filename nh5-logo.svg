@@ -7,7 +7,7 @@
   <!-- NH intertwined monogram -->
   <text x="72" y="80" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="82" font-weight="600" fill="#121737" letter-spacing="-6">NH</text>
   <!-- Large 5 -->
-  <text x="158" y="88" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="100" font-weight="400" fill="#DBBA82">5</text>
+  <text x="158" y="88" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="100" font-weight="400" fill="#121737">5</text>
   <!-- Decorative line -->
   <line x1="30" y1="95" x2="210" y2="95" stroke="#121737" stroke-width="0.5" opacity="0.3"/>
   <!-- Subtitle text -->
