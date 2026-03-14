@@ -78,6 +78,39 @@ header .container {
     color: var(--primary-color);
 }
 
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 8px;
+    padding-right: 16px;
+    border-right: 1px solid var(--border-color);
+}
+
+.lang-active {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+}
+
+.lang-separator {
+    color: var(--border-color);
+    font-size: 14px;
+}
+
+.lang-link {
+    font-size: 14px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.lang-link:hover {
+    color: var(--primary-color);
+}
+
 .hero {
     padding: 80px 0;
     background-color: var(--background-gray);
