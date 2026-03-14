@@ -78,6 +78,8 @@ function initContactForm() {
 
         const formData = new FormData(form);
 
+        var isEnglish = document.documentElement.lang === 'en';
+
         try {
             const response = await fetch('contact.php', {
                 method: 'POST',
@@ -87,15 +89,21 @@ function initContactForm() {
             const result = await response.json();
 
             if (result.success) {
-                formMessage.textContent = 'Hvala! Vaš zahtev je uspešno poslat. Kontaktiraćemo vas uskoro.';
+                formMessage.textContent = isEnglish
+                    ? 'Thank you! Your request has been sent successfully. We will contact you soon.'
+                    : 'Hvala! Vaš zahtev je uspešno poslat. Kontaktiraćemo vas uskoro.';
                 formMessage.className = 'form-message success';
                 form.reset();
             } else {
-                formMessage.textContent = 'Došlo je do greške. Molimo pokušajte ponovo.';
+                formMessage.textContent = isEnglish
+                    ? 'An error occurred. Please try again.'
+                    : 'Došlo je do greške. Molimo pokušajte ponovo.';
                 formMessage.className = 'form-message error';
             }
         } catch (error) {
-            formMessage.textContent = 'Došlo je do greške. Molimo pokušajte ponovo.';
+            formMessage.textContent = isEnglish
+                ? 'An error occurred. Please try again.'
+                : 'Došlo je do greške. Molimo pokušajte ponovo.';
             formMessage.className = 'form-message error';
         }
 
